@@ -4,7 +4,6 @@ export default function AddCategory({ onNewCategory }) {
     const [inputValue, setInputValue] = useState('');
 
     const onInputChange = ({ target }) => {
-        // console.log(target.value);
         setInputValue(target.value);
     }
 
@@ -12,8 +11,7 @@ export default function AddCategory({ onNewCategory }) {
         event.preventDefault();
 
         if (inputValue.trim().length <= 1) return;
-
-        // setCategories(categories => [...categories, inputValue]);
+        
         onNewCategory( inputValue.trim() );
 
         setInputValue('');

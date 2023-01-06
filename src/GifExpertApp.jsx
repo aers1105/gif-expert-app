@@ -13,7 +13,6 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <h1>Gif</h1>
 
       <AddCategory
         onNewCategory={(value) => onAddCategory(value)}
